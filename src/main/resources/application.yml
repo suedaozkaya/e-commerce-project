@@ -35,6 +35,20 @@ management: # actuator
     web: 
       exposure:
         include: ['health', 'loggers', 'env', 'beans']    
+  info:
+    env:
+      enabled: true
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true  
+        
+ecommerce:
+  app:
+    jwtSecret: ecommerce123
+    jwtExpirationMs: 86400000
+      
     
           
 
